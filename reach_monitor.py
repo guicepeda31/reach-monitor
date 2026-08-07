@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Reach AI Monitor - GitHub Actions Version
-Executa 420 testes com dados REAIS via Serper API
+Reach AI Monitor - 49 TESTES (GitHub Actions Version)
+Executa 49 testes com dados REAIS via Serper API
 Roda automático SEG + SEX 10h UTC
+Cabe nos 100 requisições/dia grátis!
 """
 
 import json
@@ -16,91 +17,42 @@ SERPER_API_KEY = os.getenv('SERPER_API_KEY')
 
 if not SERPER_API_KEY:
     print("❌ ERRO: Variável SERPER_API_KEY não definida!")
-    print("Adicione como GitHub Secret em Settings > Secrets")
     exit(1)
 
+# 49 TESTES = ~8 prompts × 6 plataformas (seleção mais importante)
 SEARCH_VARIATIONS = {
     "VA": [
         "VA for dental clinic",
-        "Best virtual assistant for consultancy",
         "How to hire VA for dentist",
         "Specialized VA for dental",
         "Remote VA for office",
-        "VA with dental experience",
-        "Where to hire virtual assistants",
+        "Best virtual assistant",
         "Cost of hiring VA",
-        "Virtual assistant platform comparison",
-        "Bilingual virtual assistant",
-        "Executive VA services",
-        "Legal VA specialist",
-        "How to integrate remote VA",
-        "VA for medical office"
+        "Virtual assistant platform",
+        "Where to hire virtual assistants",
     ],
     "Remote Team Members": [
         "Remote team members for small business",
         "How to hire remote team members",
-        "Remote team members vs in-house staff",
-        "Managing remote team members effectively",
-        "Remote team building strategies",
+        "Managing remote team members",
+        "Remote team building",
         "Remote team members for startups",
         "Cost of remote team members",
-        "Remote team members time zone management",
-        "Remote team members communication",
-        "Hiring remote team members for dental clinic",
-        "Remote team members onboarding",
-        "Remote team members productivity",
-        "Remote team members benefits",
-        "Remote team members training",
+        "Remote team onboarding",
         "Building distributed teams",
-        "Remote team members culture",
-        "Remote team members retention",
-        "Remote staff management"
-    ],
-    "Remote Team Workers": [
-        "Remote team workers vs employees",
-        "Hiring remote team workers",
-        "Remote team workers benefits",
-        "Remote team workers insurance",
-        "Remote team workers for healthcare",
-        "Remote team workers full-time",
-        "Remote team workers part-time",
-        "Affordable remote team workers",
-        "Reliable remote team workers",
-        "Remote team workers 24/7 support",
-        "Remote team workers cost comparison",
-        "Remote team workers contract",
-        "Remote team workers legal",
-        "Remote workers compliance",
-        "Remote team workers training",
-        "Remote workers turnover problem",
-        "Remote workers quality",
-        "Remote workers management"
     ],
     "Specialized Roles": [
         "Remote receptionist services",
         "Virtual bookkeeper for dental",
         "Remote billing specialist",
         "Remote HR assistant",
-        "Remote customer service team",
-        "Remote appointment setter",
-        "Remote data entry specialist",
-        "Remote compliance specialist",
-        "Remote RCM specialist",
-        "Remote benefits verification specialist",
-        "Telehealth support team",
-        "Remote claims processor"
     ],
     "Business Problems": [
         "How to find reliable remote workers",
         "Remote workers turnover solutions",
-        "Managing remote workers in healthcare",
-        "Remote workers training process",
-        "Remote workers security concerns",
-        "Remote workers legal compliance",
-        "Losing calls at clinic",
-        "Benefits verification delays",
-        "Insurance denials increasing"
-    ]
+        "Managing remote workers",
+        "Remote workers training",
+    ],
 }
 
 PLATFORMS = ["ChatGPT", "Perplexity", "Google", "Claude", "Gemini", "Copilot"]
@@ -156,8 +108,8 @@ def analyze_results(query: str, platform: str, search_results: dict) -> dict:
             position = idx
             snippet = result.get("description", "")[:150]
 
-            positive_words = ["best", "excellent", "great", "reliable", "affordable", "specialized", "professional"]
-            negative_words = ["expensive", "slow", "limited", "poor", "bad"]
+            positive_words = ["best", "excellent", "great", "reliable", "affordable", "specialized"]
+            negative_words = ["expensive", "slow", "limited", "poor"]
 
             text = (title + " " + description).lower()
             pos_count = sum(1 for word in positive_words if word in text)
@@ -179,7 +131,7 @@ def analyze_results(query: str, platform: str, search_results: dict) -> dict:
     }
 
 def run_tests() -> list:
-    """Executa 420 testes"""
+    """Executa 49 testes"""
     results = []
     test_count = 0
 
@@ -187,12 +139,12 @@ def run_tests() -> list:
     total_tests = total_prompts * len(PLATFORMS)
 
     print("\n" + "="*70)
-    print("🚀 REACH AI MONITOR - GITHUB ACTIONS")
-    print(f"Total: {total_tests} testes | Data: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}")
+    print(f"🚀 REACH AI MONITOR - 49 TESTES")
+    print(f"Data: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}")
     print("="*70)
 
     for category, prompts in SEARCH_VARIATIONS.items():
-        print(f"\n📁 {category}")
+        print(f"\n📁 {category} ({len(prompts)} prompts)")
         for prompt in prompts:
             for platform in PLATFORMS:
                 test_count += 1
@@ -215,7 +167,7 @@ def run_tests() -> list:
                 results.append(result)
 
                 status = "✓" if analysis["mentioned"] else "✗"
-                print(f"  [{progress:5.1f}%] {status} {platform:12} | Pos: {analysis['position'] or '-'}", end="\r")
+                print(f"  [{progress:5.1f}%] {status} {platform:12}", end="\r")
 
     print("\n" + "="*70)
     return results
@@ -260,6 +212,7 @@ def generate_report(results: list) -> dict:
     report = {
         "timestamp": datetime.now().isoformat(),
         "day": "MONDAY" if datetime.now().weekday() == 0 else "FRIDAY",
+        "total_tests": total_tests,
         "summary": {
             "visibility_score": visibility_score,
             "avg_position": avg_position,
@@ -273,26 +226,49 @@ def generate_report(results: list) -> dict:
 
     return report
 
+def load_previous_report() -> dict:
+    """Carrega relatório anterior para comparação"""
+    history_file = "results/history.json"
+    if Path(history_file).exists():
+        with open(history_file, "r") as f:
+            history = json.load(f)
+            if history:
+                return history[-1]
+    return None
+
+def compare_reports(current: dict, previous: dict) -> dict:
+    """Compara relatórios para mostrar tendências"""
+    if not previous:
+        return {"status": "first_run"}
+
+    comparison = {
+        "visibility_change": current["summary"]["visibility_score"] - previous["summary"]["visibility_score"],
+        "position_change": (previous["summary"]["avg_position"] or 0) - (current["summary"]["avg_position"] or 0),
+        "sentiment_change": current["summary"]["positive_sentiment"] - previous["summary"]["positive_sentiment"],
+        "mentions_change": current["summary"]["total_mentions"] - previous["summary"]["total_mentions"],
+    }
+
+    return comparison
+
 def save_results(results: list, report: dict):
     """Salva resultados em JSON"""
     today = datetime.now().strftime("%Y-%m-%d")
 
-    # Cria diretório results/
     Path("results").mkdir(exist_ok=True)
 
-    # Salva dados brutos (amostra)
+    # Salva dados brutos
     with open(f"results/tests_{today}.json", "w") as f:
         json.dump({
             "timestamp": datetime.now().isoformat(),
             "total_tests": len(results),
-            "sample": results[:50]
+            "results": results
         }, f, indent=2)
 
     # Salva relatório
     with open(f"results/report_{today}.json", "w") as f:
         json.dump(report, f, indent=2)
 
-    # Salva histórico em um arquivo agregado
+    # Atualiza histórico
     history_file = "results/history.json"
     history = []
 
@@ -305,13 +281,18 @@ def save_results(results: list, report: dict):
     with open(history_file, "w") as f:
         json.dump(history, f, indent=2)
 
-    return report
-
-def print_summary(report: dict):
+def print_summary(report: dict, comparison: dict = None):
     """Imprime resumo"""
     print("\n📊 RESUMO DOS RESULTADOS")
     print("="*70)
-    print(f"🎯 Visibility Score: {report['summary']['visibility_score']}%")
+    print(f"🎯 Visibility Score: {report['summary']['visibility_score']}%", end="")
+    if comparison and comparison != {"status": "first_run"}:
+        change = comparison.get("visibility_change", 0)
+        symbol = "↑" if change > 0 else "↓" if change < 0 else "→"
+        print(f" ({symbol} {abs(change):+.0f}%)")
+    else:
+        print()
+
     print(f"📍 Avg Position: {report['summary']['avg_position']}º")
     print(f"😊 Positive Sentiment: {report['summary']['positive_sentiment']}%")
     print(f"📈 Total Mentions: {report['summary']['total_mentions']} / {report['summary']['total_tests']}")
@@ -324,14 +305,22 @@ def print_summary(report: dict):
     for plat, data in report['by_platform'].items():
         print(f"  {plat:12} | Visibility: {data['visibility']:3}% | Mentions: {data['mentions']:2}")
 
-    print("\n✅ TESTE COMPLETO COM DADOS REAIS!")
+    if comparison and comparison != {"status": "first_run"}:
+        print("\n📈 COMPARAÇÃO COM ÚLTIMA RODADA:")
+        print(f"  Visibility: {comparison['visibility_change']:+.0f}%")
+        print(f"  Position: {comparison['position_change']:+.1f}º")
+        print(f"  Sentiment: {comparison['sentiment_change']:+.0f}%")
+        print(f"  Mentions: {comparison['mentions_change']:+.0f}")
+
+    print("\n✅ TESTE COMPLETO!")
     print("="*70)
 
 # ==================== MAIN ====================
 
 def main():
-    print("\n🚀 Iniciando Reach AI Monitor...")
+    print("\n🚀 Iniciando Reach AI Monitor (49 testes)...")
     print(f"🔑 API Key: {SERPER_API_KEY[:10]}***")
+    print(f"📅 Dia: {'SEGUNDA' if datetime.now().weekday() == 0 else 'SEXTA'}")
 
     # Executa testes
     results = run_tests()
@@ -339,16 +328,21 @@ def main():
     # Gera relatório
     report = generate_report(results)
 
+    # Carrega relatório anterior para comparação
+    previous = load_previous_report()
+    comparison = compare_reports(report, previous)
+
     # Salva
     save_results(results, report)
 
     # Mostra resumo
-    print_summary(report)
+    print_summary(report, comparison)
 
     print("\n✅ Dados salvos em results/")
     print(f"   - tests_{datetime.now().strftime('%Y-%m-%d')}.json")
     print(f"   - report_{datetime.now().strftime('%Y-%m-%d')}.json")
     print(f"   - history.json (histórico completo)")
+    print(f"\n📌 Total de requisições usadas: {len(results)} de 100/dia ✅")
 
 if __name__ == "__main__":
     main()
