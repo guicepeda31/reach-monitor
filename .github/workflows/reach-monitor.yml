@@ -2,11 +2,9 @@ name: Reach AI Monitor - Real Data Collection
 
 on:
   schedule:
-    # Segunda-feira 10:00 UTC
     - cron: '0 10 * * 1'
-    # Sexta-feira 10:00 UTC
     - cron: '0 10 * * 5'
-  workflow_dispatch: # Manual trigger
+  workflow_dispatch:
 
 jobs:
   reach-monitor:
