@@ -30,7 +30,7 @@ jobs:
           pip install requests beautifulsoup4 python-dotenv
 
       - name: Run Reach AI Monitor Tests
-        run: python reach_ai_monitor_agent.py
+        run: python reach_monitor.py
 
       - name: Commit and push results
         run: |
