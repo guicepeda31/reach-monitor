@@ -11,13 +11,22 @@ import os
 import requests
 from datetime import datetime
 from pathlib import Path
+import sys
 
 # ==================== CONFIG ====================
-SERPER_API_KEY = os.getenv('SERPER_API_KEY')
+SERPER_API_KEY = os.getenv('SERPER_API_KEY', '').strip()
 
 if not SERPER_API_KEY:
     print("❌ ERRO: Variável SERPER_API_KEY não definida!")
-    exit(1)
+    print("   Configure em: GitHub Repo → Settings → Secrets → New Secret")
+    print("   Nome: SERPER_API_KEY")
+    print("   Valor: sua-chave-aqui")
+    sys.exit(1)
+
+# Cria diretório de resultados
+RESULTS_DIR = Path("results")
+RESULTS_DIR.mkdir(exist_ok=True)
+(RESULTS_DIR / "history").mkdir(exist_ok=True)
 
 # 49 TESTES = ~8 prompts × 6 plataformas (seleção mais importante)
 SEARCH_VARIATIONS = {
@@ -55,7 +64,7 @@ SEARCH_VARIATIONS = {
     ],
 }
 
-PLATFORMS = ["ChatGPT", "Perplexity", "Google", "Claude", "Gemini", "Copilot"]
+PLATFORMS = ["Google", "ChatGPT", "Perplexity", "Claude", "Gemini", "Copilot"]
 
 # ==================== FUNCTIONS ====================
 
@@ -64,12 +73,12 @@ def search_serper(query: str, platform: str = "Google") -> dict:
     url = "https://google.serper.dev/search"
 
     search_queries = {
-        "ChatGPT": f"{query} site:chatgpt.com OR site:openai.com",
-        "Perplexity": f"{query} site:perplexity.ai",
+        "ChatGPT": f"{query} ChatGPT OpenAI",
+        "Perplexity": f"{query} Perplexity AI",
         "Google": query,
-        "Claude": f"{query} site:claude.ai OR site:anthropic.com",
-        "Gemini": f"{query} site:gemini.google.com",
-        "Copilot": f"{query} site:microsoft.com OR site:copilot.com"
+        "Claude": f"{query} Claude Anthropic",
+        "Gemini": f"{query} Gemini Google",
+        "Copilot": f"{query} Copilot Microsoft"
     }
 
     payload = {
@@ -86,8 +95,11 @@ def search_serper(query: str, platform: str = "Google") -> dict:
         response = requests.post(url, json=payload, headers=headers, timeout=10)
         response.raise_for_status()
         return response.json()
+    except requests.exceptions.RequestException as e:
+        print(f"  ⚠️  Error searching {platform}: {str(e)[:50]}")
+        return {"searchResults": []}
     except Exception as e:
-        print(f"❌ Error searching {platform}: {e}")
+        print(f"  ⚠️  Unexpected error: {str(e)[:50]}")
         return {"searchResults": []}
 
 def analyze_results(query: str, platform: str, search_results: dict) -> dict:
@@ -103,13 +115,15 @@ def analyze_results(query: str, platform: str, search_results: dict) -> dict:
         title = result.get("title", "").lower()
         description = result.get("description", "").lower()
 
-        if "reach" in title or "reach" in description:
+        # Procura por Reach em título ou descrição
+        if "reach" in title or "reach.co" in description or "getreach" in description:
             mentioned = True
             position = idx
             snippet = result.get("description", "")[:150]
 
-            positive_words = ["best", "excellent", "great", "reliable", "affordable", "specialized"]
-            negative_words = ["expensive", "slow", "limited", "poor"]
+            # Análise de sentimento simples
+            positive_words = ["best", "excellent", "great", "reliable", "affordable", "specialized", "trusted"]
+            negative_words = ["expensive", "slow", "limited", "poor", "unreliable"]
 
             text = (title + " " + description).lower()
             pos_count = sum(1 for word in positive_words if word in text)
@@ -141,10 +155,12 @@ def run_tests() -> list:
     print("\n" + "="*70)
     print(f"🚀 REACH AI MONITOR - 49 TESTES")
     print(f"Data: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}")
+    print(f"API: Serper (up to 100 free requests/day)")
     print("="*70)
 
     for category, prompts in SEARCH_VARIATIONS.items():
         print(f"\n📁 {category} ({len(prompts)} prompts)")
+        
         for prompt in prompts:
             for platform in PLATFORMS:
                 test_count += 1
@@ -166,7 +182,7 @@ def run_tests() -> list:
 
                 results.append(result)
 
-                status = "✓" if analysis["mentioned"] else "✗"
+                status = "✅" if analysis["mentioned"] else "⬜"
                 print(f"  [{progress:5.1f}%] {status} {platform:12}", end="\r")
 
     print("\n" + "="*70)
@@ -175,7 +191,10 @@ def run_tests() -> list:
 def generate_report(results: list) -> dict:
     """Gera relatório com métricas"""
     if not results:
-        return {"status": "no_data"}
+        return {
+            "status": "no_data",
+            "timestamp": datetime.now().isoformat()
+        }
 
     mentioned_count = sum(1 for r in results if r["mentioned"])
     total_tests = len(results)
@@ -187,6 +206,7 @@ def generate_report(results: list) -> dict:
     positive = sum(1 for r in results if r["sentiment"] == "positive")
     sentiment_score = round((positive / mentioned_count) * 100) if mentioned_count > 0 else 0
 
+    # Performance por categoria
     by_category = {}
     for category in SEARCH_VARIATIONS.keys():
         cat_results = [r for r in results if r["category"] == category]
@@ -198,20 +218,22 @@ def generate_report(results: list) -> dict:
             "tests": len(cat_results)
         }
 
+    # Performance por plataforma
     by_platform = {}
     for platform in PLATFORMS:
         plat_results = [r for r in results if r["platform"] == platform]
-        plat_mentions = sum(1 for r in plat_results if r["mentioned"])
-        plat_visibility = round((plat_mentions / len(plat_results)) * 100) if plat_results else 0
-        by_platform[platform] = {
-            "visibility": plat_visibility,
-            "mentions": plat_mentions,
-            "tests": len(plat_results)
-        }
+        if plat_results:
+            plat_mentions = sum(1 for r in plat_results if r["mentioned"])
+            plat_visibility = round((plat_mentions / len(plat_results)) * 100)
+            by_platform[platform] = {
+                "visibility": plat_visibility,
+                "mentions": plat_mentions,
+                "tests": len(plat_results)
+            }
 
     report = {
         "timestamp": datetime.now().isoformat(),
-        "day": "MONDAY" if datetime.now().weekday() == 0 else "FRIDAY",
+        "day": ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"][datetime.now().weekday()],
         "total_tests": total_tests,
         "summary": {
             "visibility_score": visibility_score,
@@ -227,90 +249,118 @@ def generate_report(results: list) -> dict:
     return report
 
 def load_previous_report() -> dict:
-    """Carrega relatório anterior para comparação"""
-    history_file = "results/history.json"
-    if Path(history_file).exists():
-        with open(history_file, "r") as f:
-            history = json.load(f)
-            if history:
-                return history[-1]
+    """Carrega relatório anterior para comparação (com fallback)"""
+    history_file = RESULTS_DIR / "history.json"
+    
+    try:
+        if history_file.exists():
+            with open(history_file, "r") as f:
+                history = json.load(f)
+                if history and isinstance(history, list) and len(history) > 0:
+                    return history[-1]
+    except (json.JSONDecodeError, IOError, IndexError) as e:
+        print(f"  ⚠️  Could not load history: {e}")
+    
     return None
 
 def compare_reports(current: dict, previous: dict) -> dict:
     """Compara relatórios para mostrar tendências"""
     if not previous:
-        return {"status": "first_run"}
+        return {"status": "first_run", "previous_timestamp": None}
 
-    comparison = {
-        "visibility_change": current["summary"]["visibility_score"] - previous["summary"]["visibility_score"],
-        "position_change": (previous["summary"]["avg_position"] or 0) - (current["summary"]["avg_position"] or 0),
-        "sentiment_change": current["summary"]["positive_sentiment"] - previous["summary"]["positive_sentiment"],
-        "mentions_change": current["summary"]["total_mentions"] - previous["summary"]["total_mentions"],
-    }
-
-    return comparison
+    try:
+        comparison = {
+            "visibility_change": current["summary"]["visibility_score"] - previous["summary"]["visibility_score"],
+            "position_change": (previous["summary"]["avg_position"] or 0) - (current["summary"]["avg_position"] or 0),
+            "sentiment_change": current["summary"]["positive_sentiment"] - previous["summary"]["positive_sentiment"],
+            "mentions_change": current["summary"]["total_mentions"] - previous["summary"]["total_mentions"],
+            "previous_timestamp": previous.get("timestamp")
+        }
+        return comparison
+    except (KeyError, TypeError) as e:
+        print(f"  ⚠️  Could not compare reports: {e}")
+        return {"status": "comparison_error"}
 
 def save_results(results: list, report: dict):
-    """Salva resultados em JSON"""
-    today = datetime.now().strftime("%Y-%m-%d")
+    """Salva resultados em JSON (com error handling)"""
+    try:
+        today = datetime.now().strftime("%Y-%m-%d")
 
-    Path("results").mkdir(exist_ok=True)
+        # Salva dados brutos
+        tests_file = RESULTS_DIR / f"tests_{today}.json"
+        with open(tests_file, "w") as f:
+            json.dump({
+                "timestamp": datetime.now().isoformat(),
+                "total_tests": len(results),
+                "results": results
+            }, f, indent=2)
 
-    # Salva dados brutos
-    with open(f"results/tests_{today}.json", "w") as f:
-        json.dump({
-            "timestamp": datetime.now().isoformat(),
-            "total_tests": len(results),
-            "results": results
-        }, f, indent=2)
+        # Salva relatório
+        report_file = RESULTS_DIR / f"report_{today}.json"
+        with open(report_file, "w") as f:
+            json.dump(report, f, indent=2)
 
-    # Salva relatório
-    with open(f"results/report_{today}.json", "w") as f:
-        json.dump(report, f, indent=2)
+        # Atualiza histórico
+        history_file = RESULTS_DIR / "history.json"
+        history = []
 
-    # Atualiza histórico
-    history_file = "results/history.json"
-    history = []
+        if history_file.exists():
+            try:
+                with open(history_file, "r") as f:
+                    history = json.load(f)
+            except (json.JSONDecodeError, IOError):
+                history = []
 
-    if Path(history_file).exists():
-        with open(history_file, "r") as f:
-            history = json.load(f)
+        history.append(report)
 
-    history.append(report)
+        with open(history_file, "w") as f:
+            json.dump(history, f, indent=2)
 
-    with open(history_file, "w") as f:
-        json.dump(history, f, indent=2)
+        print(f"\n✅ Dados salvos em results/")
+        print(f"   - tests_{today}.json")
+        print(f"   - report_{today}.json")
+        print(f"   - history.json")
+
+    except IOError as e:
+        print(f"\n❌ Erro ao salvar resultados: {e}")
 
 def print_summary(report: dict, comparison: dict = None):
     """Imprime resumo"""
+    if report.get("status") == "no_data":
+        print("\n❌ Nenhum resultado coletado!")
+        return
+
     print("\n📊 RESUMO DOS RESULTADOS")
     print("="*70)
-    print(f"🎯 Visibility Score: {report['summary']['visibility_score']}%", end="")
-    if comparison and comparison != {"status": "first_run"}:
+    
+    summary = report.get("summary", {})
+    
+    print(f"🎯 Visibility Score: {summary.get('visibility_score', 'N/A')}%", end="")
+    if comparison and comparison.get("status") != "first_run":
         change = comparison.get("visibility_change", 0)
         symbol = "↑" if change > 0 else "↓" if change < 0 else "→"
-        print(f" ({symbol} {abs(change):+.0f}%)")
+        print(f" {symbol} {abs(change):+.0f}%")
     else:
-        print()
+        print(" (first run)")
 
-    print(f"📍 Avg Position: {report['summary']['avg_position']}º")
-    print(f"😊 Positive Sentiment: {report['summary']['positive_sentiment']}%")
-    print(f"📈 Total Mentions: {report['summary']['total_mentions']} / {report['summary']['total_tests']}")
+    print(f"📍 Avg Position: {summary.get('avg_position', 'N/A')}º")
+    print(f"😊 Positive Sentiment: {summary.get('positive_sentiment', 'N/A')}%")
+    print(f"📈 Total Mentions: {summary.get('total_mentions', 0)} / {summary.get('total_tests', 0)}")
 
     print("\n📊 Performance por Categoria:")
-    for cat, data in report['by_category'].items():
+    for cat, data in report.get('by_category', {}).items():
         print(f"  {cat:25} | Visibility: {data['visibility']:3}% | Mentions: {data['mentions']:2}")
 
     print("\n🌐 Performance por Plataforma:")
-    for plat, data in report['by_platform'].items():
+    for plat, data in report.get('by_platform', {}).items():
         print(f"  {plat:12} | Visibility: {data['visibility']:3}% | Mentions: {data['mentions']:2}")
 
-    if comparison and comparison != {"status": "first_run"}:
+    if comparison and comparison.get("status") not in ["first_run", "comparison_error"]:
         print("\n📈 COMPARAÇÃO COM ÚLTIMA RODADA:")
-        print(f"  Visibility: {comparison['visibility_change']:+.0f}%")
-        print(f"  Position: {comparison['position_change']:+.1f}º")
-        print(f"  Sentiment: {comparison['sentiment_change']:+.0f}%")
-        print(f"  Mentions: {comparison['mentions_change']:+.0f}")
+        print(f"  Visibility: {comparison.get('visibility_change', 0):+.0f}%")
+        print(f"  Position: {comparison.get('position_change', 0):+.1f}º")
+        print(f"  Sentiment: {comparison.get('sentiment_change', 0):+.0f}%")
+        print(f"  Mentions: {comparison.get('mentions_change', 0):+.0f}")
 
     print("\n✅ TESTE COMPLETO!")
     print("="*70)
@@ -319,30 +369,41 @@ def print_summary(report: dict, comparison: dict = None):
 
 def main():
     print("\n🚀 Iniciando Reach AI Monitor (49 testes)...")
-    print(f"🔑 API Key: {SERPER_API_KEY[:10]}***")
-    print(f"📅 Dia: {'SEGUNDA' if datetime.now().weekday() == 0 else 'SEXTA'}")
+    print(f"🔑 API Key: {SERPER_API_KEY[:15]}{'*' * (len(SERPER_API_KEY)-15)}")
+    print(f"📅 Day: {['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY'][datetime.now().weekday()]}")
 
-    # Executa testes
-    results = run_tests()
+    try:
+        # Executa testes
+        results = run_tests()
+        
+        if not results:
+            print("\n❌ Nenhum teste foi executado!")
+            sys.exit(1)
 
-    # Gera relatório
-    report = generate_report(results)
+        # Gera relatório
+        report = generate_report(results)
 
-    # Carrega relatório anterior para comparação
-    previous = load_previous_report()
-    comparison = compare_reports(report, previous)
+        # Carrega relatório anterior para comparação
+        previous = load_previous_report()
+        comparison = compare_reports(report, previous)
 
-    # Salva
-    save_results(results, report)
+        # Salva
+        save_results(results, report)
 
-    # Mostra resumo
-    print_summary(report, comparison)
+        # Mostra resumo
+        print_summary(report, comparison)
 
-    print("\n✅ Dados salvos em results/")
-    print(f"   - tests_{datetime.now().strftime('%Y-%m-%d')}.json")
-    print(f"   - report_{datetime.now().strftime('%Y-%m-%d')}.json")
-    print(f"   - history.json (histórico completo)")
-    print(f"\n📌 Total de requisições usadas: {len(results)} de 100/dia ✅")
+        print(f"\n📌 Total de requisições usadas: {len(results)} requisições ✅")
+        print(f"   (Limite: 100/dia em Serper)")
+
+    except KeyboardInterrupt:
+        print("\n\n⚠️  Interrompido pelo usuário")
+        sys.exit(0)
+    except Exception as e:
+        print(f"\n\n❌ Erro não esperado: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
