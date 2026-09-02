@@ -2,25 +2,23 @@ name: Reach AI Monitor - Real Data Collection
 
 on:
   schedule:
-    - cron: '0 10 * * 1'  # Segunda-feira às 10:00 UTC
-  workflow_dispatch:      # Permite executar manualmente
+    - cron: '0 10 * * 1'     # Segunda-feira às 10:00 UTC
+    - cron: '0 10 * * 5'     # Sexta-feira às 10:00 UTC
+  workflow_dispatch:          # Permite executar manualmente
 
 permissions:
-  contents: write         # ✅ FIX: Permissão para fazer commit e push
+  contents: write             # Permissão para fazer commit e push
 
 jobs:
   reach-monitor:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Set up job
-        uses: actions/checkout@v4.2.0
-
-      - name: Run actions/checkout@v4
+      - name: Checkout repository
         uses: actions/checkout@v4.2.0
 
       - name: Set up Python
-        uses: actions/setup-python@v5    # ✅ FIX: Atualizado para v5 (Node.js 24 compatible)
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -30,32 +28,36 @@ jobs:
           pip install requests beautifulsoup4 python-dotenv
 
       - name: Run Reach AI Monitor Tests
-        run: python reach_monitor.py
+        env:
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+        run: |
+          mkdir -p results/history
+          python reach_monitor.py
 
       - name: Commit and push results
         run: |
           git config user.name "Reach Monitor Bot"
-          git config user.email "monitor@reach.co"
-
-          # Criar diretório se não existir
-          mkdir -p results/history
-
-          # Adicionar e commitar
+          git config user.email "monitor@reach.local"
+          
           git add results/
-          git commit -m "Reach AI Monitor - $(date +'%Y-%m-%d %H:%M') UTC" || true
-          git push origin main
+          git commit -m "Reach AI Monitor - $(date +'%Y-%m-%d %H:%M') UTC" || echo "No changes to commit"
+          git push origin main || echo "Push failed - no changes"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload results as artifact
         uses: actions/upload-artifact@v4.4.0
         with:
-          name: reach-monitor-results
+          name: reach-monitor-results-${{ github.run_id }}
           path: results/
           retention-days: 30
+        if: always()
 
-      - name: Post Run actions/checkout@v4
-        uses: actions/checkout@v4.2.0
-
-      - name: Complete job
-        run: echo "Reach AI Monitor execution completed"
+      - name: Job Summary
+        run: |
+          echo "## ✅ Reach AI Monitor Execution" >> $GITHUB_STEP_SUMMARY
+          echo "**Date:** $(date +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "**Status:** Success" >> $GITHUB_STEP_SUMMARY
+          if [ -f results/report_*.json ]; then
+            echo "**Results:** Saved to artifacts" >> $GITHUB_STEP_SUMMARY
+          fi
