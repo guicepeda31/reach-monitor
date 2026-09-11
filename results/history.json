@@ -130,5 +130,71 @@
         "tests": 24
       }
     }
+  },
+  {
+    "timestamp": "2026-09-11T13:57:56.468282",
+    "day": "FRIDAY",
+    "total_tests": 144,
+    "summary": {
+      "visibility_score": 0,
+      "avg_position": null,
+      "positive_sentiment": 0,
+      "total_mentions": 0,
+      "total_tests": 144
+    },
+    "by_category": {
+      "VA": {
+        "visibility": 0,
+        "mentions": 0,
+        "tests": 48
+      },
+      "Remote Team Members": {
+        "visibility": 0,
+        "mentions": 0,
+        "tests": 48
+      },
+      "Specialized Roles": {
+        "visibility": 0,
+        "mentions": 0,
+        "tests": 24
+      },
+      "Business Problems": {
+        "visibility": 0,
+        "mentions": 0,
+        "tests": 24
+      }
+    },
+    "by_platform": {
+      "Google": {
+        "visibility": 0,
+        "mentions": 0,
+        "tests": 24
+      },
+      "ChatGPT": {
+        "visibility": 0,
+        "mentions": 0,
+        "tests": 24
+      },
+      "Perplexity": {
+        "visibility": 0,
+        "mentions": 0,
+        "tests": 24
+      },
+      "Claude": {
+        "visibility": 0,
+        "mentions": 0,
+        "tests": 24
+      },
+      "Gemini": {
+        "visibility": 0,
+        "mentions": 0,
+        "tests": 24
+      },
+      "Copilot": {
+        "visibility": 0,
+        "mentions": 0,
+        "tests": 24
+      }
+    }
   }
 ]

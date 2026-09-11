@@ -1,0 +1,1446 @@
+{
+  "timestamp": "2026-09-11T13:57:56.468729",
+  "total_tests": 144,
+  "results": [
+    {
+      "timestamp": "2026-09-11T13:55:11.621262",
+      "prompt": "VA for dental clinic",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:12.645404",
+      "prompt": "VA for dental clinic",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:14.059566",
+      "prompt": "VA for dental clinic",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:15.888480",
+      "prompt": "VA for dental clinic",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:16.758355",
+      "prompt": "VA for dental clinic",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:17.578562",
+      "prompt": "VA for dental clinic",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:19.475839",
+      "prompt": "How to hire VA for dentist",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:20.333554",
+      "prompt": "How to hire VA for dentist",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:21.228782",
+      "prompt": "How to hire VA for dentist",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:22.422805",
+      "prompt": "How to hire VA for dentist",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:23.325878",
+      "prompt": "How to hire VA for dentist",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:24.577174",
+      "prompt": "How to hire VA for dentist",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:26.041098",
+      "prompt": "Specialized VA for dental",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:27.368832",
+      "prompt": "Specialized VA for dental",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:30.850204",
+      "prompt": "Specialized VA for dental",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:32.029699",
+      "prompt": "Specialized VA for dental",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:35.344700",
+      "prompt": "Specialized VA for dental",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:36.619856",
+      "prompt": "Specialized VA for dental",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:37.355269",
+      "prompt": "Remote VA for office",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:38.563587",
+      "prompt": "Remote VA for office",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:39.618323",
+      "prompt": "Remote VA for office",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:40.722855",
+      "prompt": "Remote VA for office",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:41.725641",
+      "prompt": "Remote VA for office",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:42.613665",
+      "prompt": "Remote VA for office",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:43.724214",
+      "prompt": "Best virtual assistant",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:44.609074",
+      "prompt": "Best virtual assistant",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:45.409243",
+      "prompt": "Best virtual assistant",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:46.619038",
+      "prompt": "Best virtual assistant",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:47.625778",
+      "prompt": "Best virtual assistant",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:50.066136",
+      "prompt": "Best virtual assistant",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:50.804550",
+      "prompt": "Cost of hiring VA",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:52.195458",
+      "prompt": "Cost of hiring VA",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:53.026295",
+      "prompt": "Cost of hiring VA",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:54.159200",
+      "prompt": "Cost of hiring VA",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:54.944052",
+      "prompt": "Cost of hiring VA",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:56.379979",
+      "prompt": "Cost of hiring VA",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:57.199073",
+      "prompt": "Virtual assistant platform",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:58.434170",
+      "prompt": "Virtual assistant platform",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:55:59.317596",
+      "prompt": "Virtual assistant platform",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:00.837480",
+      "prompt": "Virtual assistant platform",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:01.630153",
+      "prompt": "Virtual assistant platform",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:02.628283",
+      "prompt": "Virtual assistant platform",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:03.725231",
+      "prompt": "Where to hire virtual assistants",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:05.233387",
+      "prompt": "Where to hire virtual assistants",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:06.393701",
+      "prompt": "Where to hire virtual assistants",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:07.224422",
+      "prompt": "Where to hire virtual assistants",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:08.266907",
+      "prompt": "Where to hire virtual assistants",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:09.409903",
+      "prompt": "Where to hire virtual assistants",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:10.539409",
+      "prompt": "Remote team members for small business",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:11.649025",
+      "prompt": "Remote team members for small business",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:12.592357",
+      "prompt": "Remote team members for small business",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:13.381271",
+      "prompt": "Remote team members for small business",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:14.244504",
+      "prompt": "Remote team members for small business",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:14.959998",
+      "prompt": "Remote team members for small business",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:16.045867",
+      "prompt": "How to hire remote team members",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:17.102478",
+      "prompt": "How to hire remote team members",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:18.513835",
+      "prompt": "How to hire remote team members",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:19.481019",
+      "prompt": "How to hire remote team members",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:20.370622",
+      "prompt": "How to hire remote team members",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:21.243059",
+      "prompt": "How to hire remote team members",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:22.926549",
+      "prompt": "Managing remote team members",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:23.895469",
+      "prompt": "Managing remote team members",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:24.961879",
+      "prompt": "Managing remote team members",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:25.730778",
+      "prompt": "Managing remote team members",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:26.978039",
+      "prompt": "Managing remote team members",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:28.308055",
+      "prompt": "Managing remote team members",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:29.185465",
+      "prompt": "Remote team building",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:30.099503",
+      "prompt": "Remote team building",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:30.818018",
+      "prompt": "Remote team building",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:32.134637",
+      "prompt": "Remote team building",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:32.881886",
+      "prompt": "Remote team building",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:33.602618",
+      "prompt": "Remote team building",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:35.108665",
+      "prompt": "Remote team members for startups",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:35.911446",
+      "prompt": "Remote team members for startups",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:36.681635",
+      "prompt": "Remote team members for startups",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:37.696794",
+      "prompt": "Remote team members for startups",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:38.886361",
+      "prompt": "Remote team members for startups",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:39.819589",
+      "prompt": "Remote team members for startups",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:41.121066",
+      "prompt": "Cost of remote team members",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:41.924094",
+      "prompt": "Cost of remote team members",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:42.904078",
+      "prompt": "Cost of remote team members",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:44.104510",
+      "prompt": "Cost of remote team members",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:45.206618",
+      "prompt": "Cost of remote team members",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:48.076820",
+      "prompt": "Cost of remote team members",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:48.930961",
+      "prompt": "Remote team onboarding",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:50.259173",
+      "prompt": "Remote team onboarding",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:51.110608",
+      "prompt": "Remote team onboarding",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:52.182864",
+      "prompt": "Remote team onboarding",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:52.824293",
+      "prompt": "Remote team onboarding",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:53.732000",
+      "prompt": "Remote team onboarding",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:54.972866",
+      "prompt": "Building distributed teams",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:55.792835",
+      "prompt": "Building distributed teams",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:56.723030",
+      "prompt": "Building distributed teams",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:57.437810",
+      "prompt": "Building distributed teams",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:58.295438",
+      "prompt": "Building distributed teams",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:56:59.493528",
+      "prompt": "Building distributed teams",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:00.357666",
+      "prompt": "Remote receptionist services",
+      "category": "Specialized Roles",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:01.184529",
+      "prompt": "Remote receptionist services",
+      "category": "Specialized Roles",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:02.397475",
+      "prompt": "Remote receptionist services",
+      "category": "Specialized Roles",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:03.454840",
+      "prompt": "Remote receptionist services",
+      "category": "Specialized Roles",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:05.067241",
+      "prompt": "Remote receptionist services",
+      "category": "Specialized Roles",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:05.922239",
+      "prompt": "Remote receptionist services",
+      "category": "Specialized Roles",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:06.773812",
+      "prompt": "Virtual bookkeeper for dental",
+      "category": "Specialized Roles",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:08.493485",
+      "prompt": "Virtual bookkeeper for dental",
+      "category": "Specialized Roles",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:09.750618",
+      "prompt": "Virtual bookkeeper for dental",
+      "category": "Specialized Roles",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:10.908861",
+      "prompt": "Virtual bookkeeper for dental",
+      "category": "Specialized Roles",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:12.531880",
+      "prompt": "Virtual bookkeeper for dental",
+      "category": "Specialized Roles",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:14.836449",
+      "prompt": "Virtual bookkeeper for dental",
+      "category": "Specialized Roles",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:17.348741",
+      "prompt": "Remote billing specialist",
+      "category": "Specialized Roles",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:18.869016",
+      "prompt": "Remote billing specialist",
+      "category": "Specialized Roles",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:19.923290",
+      "prompt": "Remote billing specialist",
+      "category": "Specialized Roles",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:20.763521",
+      "prompt": "Remote billing specialist",
+      "category": "Specialized Roles",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:24.008950",
+      "prompt": "Remote billing specialist",
+      "category": "Specialized Roles",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:24.881563",
+      "prompt": "Remote billing specialist",
+      "category": "Specialized Roles",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:25.891552",
+      "prompt": "Remote HR assistant",
+      "category": "Specialized Roles",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:26.859189",
+      "prompt": "Remote HR assistant",
+      "category": "Specialized Roles",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:27.733639",
+      "prompt": "Remote HR assistant",
+      "category": "Specialized Roles",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:28.565699",
+      "prompt": "Remote HR assistant",
+      "category": "Specialized Roles",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:29.499643",
+      "prompt": "Remote HR assistant",
+      "category": "Specialized Roles",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:30.484072",
+      "prompt": "Remote HR assistant",
+      "category": "Specialized Roles",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:31.274615",
+      "prompt": "How to find reliable remote workers",
+      "category": "Business Problems",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:32.327272",
+      "prompt": "How to find reliable remote workers",
+      "category": "Business Problems",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:33.320335",
+      "prompt": "How to find reliable remote workers",
+      "category": "Business Problems",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:34.154841",
+      "prompt": "How to find reliable remote workers",
+      "category": "Business Problems",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:35.358485",
+      "prompt": "How to find reliable remote workers",
+      "category": "Business Problems",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:36.495016",
+      "prompt": "How to find reliable remote workers",
+      "category": "Business Problems",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:38.724180",
+      "prompt": "Remote workers turnover solutions",
+      "category": "Business Problems",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:39.963054",
+      "prompt": "Remote workers turnover solutions",
+      "category": "Business Problems",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:41.169066",
+      "prompt": "Remote workers turnover solutions",
+      "category": "Business Problems",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:42.618682",
+      "prompt": "Remote workers turnover solutions",
+      "category": "Business Problems",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:43.467459",
+      "prompt": "Remote workers turnover solutions",
+      "category": "Business Problems",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:44.124151",
+      "prompt": "Remote workers turnover solutions",
+      "category": "Business Problems",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:45.294127",
+      "prompt": "Managing remote workers",
+      "category": "Business Problems",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:46.216154",
+      "prompt": "Managing remote workers",
+      "category": "Business Problems",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:47.548302",
+      "prompt": "Managing remote workers",
+      "category": "Business Problems",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:48.154921",
+      "prompt": "Managing remote workers",
+      "category": "Business Problems",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:49.144489",
+      "prompt": "Managing remote workers",
+      "category": "Business Problems",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:50.076763",
+      "prompt": "Managing remote workers",
+      "category": "Business Problems",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:51.849577",
+      "prompt": "Remote workers training",
+      "category": "Business Problems",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:52.610649",
+      "prompt": "Remote workers training",
+      "category": "Business Problems",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:53.510223",
+      "prompt": "Remote workers training",
+      "category": "Business Problems",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:54.402041",
+      "prompt": "Remote workers training",
+      "category": "Business Problems",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:55.418248",
+      "prompt": "Remote workers training",
+      "category": "Business Problems",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-09-11T13:57:56.468100",
+      "prompt": "Remote workers training",
+      "category": "Business Problems",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    }
+  ]
+}
