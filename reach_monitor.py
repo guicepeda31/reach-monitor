@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-Reach AI Monitor - 49 TESTES (GitHub Actions Version)
-Executa 49 testes com dados REAIS via Serper API
-Roda automático SEG + SEX 10h UTC
-Cabe nos 100 requisições/dia grátis!
+Reach AI Monitor - 33 PROMPTS × 6 PLATAFORMAS = 198 TESTES (GitHub Actions Version)
+Executa 198 testes com dados REAIS via Tavily API
+Roda automático 1x/semana (ajuste o cron no .yml do workflow)
+Tavily: 1.000 créditos GRÁTIS por mês, recorrente
+Uso estimado: ~198 testes × 4,33 execuções/mês ≈ 857 créditos/mês (dentro do limite)
 """
 
 import json
@@ -14,13 +15,13 @@ from pathlib import Path
 import sys
 
 # ==================== CONFIG ====================
-SERPER_API_KEY = os.getenv('SERPER_API_KEY', '').strip()
+TAVILY_API_KEY = os.getenv('TAVILY_API_KEY', '').strip()
 
-if not SERPER_API_KEY:
-    print("❌ ERRO: Variável SERPER_API_KEY não definida!")
+if not TAVILY_API_KEY:
+    print("❌ ERRO: Variável TAVILY_API_KEY não definida!")
     print("   Configure em: GitHub Repo → Settings → Secrets → New Secret")
-    print("   Nome: SERPER_API_KEY")
-    print("   Valor: sua-chave-aqui")
+    print("   Nome: TAVILY_API_KEY")
+    print("   Valor: sua-chave-aqui (pega em app.tavily.com, começa com tvly-)")
     sys.exit(1)
 
 # Cria diretório de resultados
@@ -28,7 +29,7 @@ RESULTS_DIR = Path("results")
 RESULTS_DIR.mkdir(exist_ok=True)
 (RESULTS_DIR / "history").mkdir(exist_ok=True)
 
-# 49 TESTES = ~8 prompts × 6 plataformas (seleção mais importante)
+# 33 prompts × 6 plataformas = 198 testes por execução
 SEARCH_VARIATIONS = {
     "VA": [
         "VA for dental clinic",
@@ -62,15 +63,28 @@ SEARCH_VARIATIONS = {
         "Managing remote workers",
         "Remote workers training",
     ],
+    "Insurance Verification Specific": [
+        "Dental insurance verification virtual assistant",
+        "Virtual assistant for dental insurance verification and billing",
+        "Outsourced dental insurance verification",
+        "Dental practice outsourcing insurance verification and billing",
+    ],
+    "Competitive & Purchase Intent": [
+        "Compare top virtual assistant companies for dental practices",
+        "Best dental VA company for insurance verification",
+        "How to hire a virtual assistant for my dental practice",
+        "Recommend a specialized virtual assistant service for a dental office that also does insurance verification",
+        "Dental virtual assistant with insurance verification",
+    ],
 }
 
 PLATFORMS = ["Google", "ChatGPT", "Perplexity", "Claude", "Gemini", "Copilot"]
 
 # ==================== FUNCTIONS ====================
 
-def search_serper(query: str, platform: str = "Google") -> dict:
-    """Executa busca real via Serper API"""
-    url = "https://google.serper.dev/search"
+def search_tavily(query: str, platform: str = "Google") -> dict:
+    """Executa busca real via Tavily API"""
+    url = "https://api.tavily.com/search"
 
     search_queries = {
         "ChatGPT": f"{query} ChatGPT OpenAI",
@@ -82,12 +96,13 @@ def search_serper(query: str, platform: str = "Google") -> dict:
     }
 
     payload = {
-        "q": search_queries.get(platform, query),
-        "num": 10
+        "query": search_queries.get(platform, query),
+        "max_results": 10,
+        "search_depth": "basic"   # "advanced" custa 2 créditos por busca; "basic" custa 1
     }
 
     headers = {
-        "X-API-KEY": SERPER_API_KEY,
+        "Authorization": f"Bearer {TAVILY_API_KEY}",
         "Content-Type": "application/json"
     }
 
@@ -97,10 +112,10 @@ def search_serper(query: str, platform: str = "Google") -> dict:
         return response.json()
     except requests.exceptions.RequestException as e:
         print(f"  ⚠️  Error searching {platform}: {str(e)[:50]}")
-        return {"searchResults": []}
+        return {"results": []}
     except Exception as e:
         print(f"  ⚠️  Unexpected error: {str(e)[:50]}")
-        return {"searchResults": []}
+        return {"results": []}
 
 def analyze_results(query: str, platform: str, search_results: dict) -> dict:
     """Analisa resultados para Reach mencionada"""
@@ -109,17 +124,17 @@ def analyze_results(query: str, platform: str, search_results: dict) -> dict:
     sentiment = "none"
     snippet = ""
 
-    results = search_results.get("searchResults", [])
+    results = search_results.get("results", [])  # Tavily retorna a chave "results"
 
     for idx, result in enumerate(results, 1):
         title = result.get("title", "").lower()
-        description = result.get("description", "").lower()
+        description = result.get("content", "").lower()  # Tavily usa "content", não "description"
 
         # Procura por Reach em título ou descrição
         if "reach" in title or "reach.co" in description or "getreach" in description:
             mentioned = True
             position = idx
-            snippet = result.get("description", "")[:150]
+            snippet = result.get("content", "")[:150]  # Tavily usa "content", não "description"
 
             # Análise de sentimento simples
             positive_words = ["best", "excellent", "great", "reliable", "affordable", "specialized", "trusted"]
@@ -145,7 +160,7 @@ def analyze_results(query: str, platform: str, search_results: dict) -> dict:
     }
 
 def run_tests() -> list:
-    """Executa 49 testes"""
+    """Executa todos os testes (33 prompts × 6 plataformas = 198 testes)"""
     results = []
     test_count = 0
 
@@ -153,9 +168,9 @@ def run_tests() -> list:
     total_tests = total_prompts * len(PLATFORMS)
 
     print("\n" + "="*70)
-    print(f"🚀 REACH AI MONITOR - 49 TESTES")
+    print(f"🚀 REACH AI MONITOR - {total_tests} TESTES")
     print(f"Data: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}")
-    print(f"API: Serper (up to 100 free requests/day)")
+    print(f"API: Tavily (1.000 créditos grátis/mês, recorrente)")
     print("="*70)
 
     for category, prompts in SEARCH_VARIATIONS.items():
@@ -166,7 +181,7 @@ def run_tests() -> list:
                 test_count += 1
                 progress = (test_count / total_tests) * 100
 
-                search_results = search_serper(prompt, platform)
+                search_results = search_tavily(prompt, platform)
                 analysis = analyze_results(prompt, platform, search_results)
 
                 result = {
@@ -368,8 +383,10 @@ def print_summary(report: dict, comparison: dict = None):
 # ==================== MAIN ====================
 
 def main():
-    print("\n🚀 Iniciando Reach AI Monitor (49 testes)...")
-    print(f"🔑 API Key: {SERPER_API_KEY[:15]}{'*' * (len(SERPER_API_KEY)-15)}")
+    total_prompts = sum(len(variations) for variations in SEARCH_VARIATIONS.values())
+    total_tests_planned = total_prompts * len(PLATFORMS)
+    print(f"\n🚀 Iniciando Reach AI Monitor ({total_tests_planned} testes)...")
+    print(f"🔑 API Key: {TAVILY_API_KEY[:15]}{'*' * (len(TAVILY_API_KEY)-15)}")
     print(f"📅 Day: {['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY'][datetime.now().weekday()]}")
 
     try:
@@ -394,7 +411,7 @@ def main():
         print_summary(report, comparison)
 
         print(f"\n📌 Total de requisições usadas: {len(results)} requisições ✅")
-        print(f"   (Limite: 100/dia em Serper)")
+        print(f"   (Limite: 1.000 créditos/mês grátis em Tavily)")
 
     except KeyboardInterrupt:
         print("\n\n⚠️  Interrompido pelo usuário")
