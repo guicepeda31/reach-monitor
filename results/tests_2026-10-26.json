@@ -1,0 +1,1986 @@
+{
+  "timestamp": "2026-10-26T16:25:40.666791",
+  "total_tests": 198,
+  "results": [
+    {
+      "timestamp": "2026-10-26T16:20:06.110328",
+      "prompt": "VA for dental clinic",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:08.335291",
+      "prompt": "VA for dental clinic",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:10.190061",
+      "prompt": "VA for dental clinic",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:11.476424",
+      "prompt": "VA for dental clinic",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:12.775708",
+      "prompt": "VA for dental clinic",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:14.545178",
+      "prompt": "VA for dental clinic",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:17.840146",
+      "prompt": "How to hire VA for dentist",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:20.523053",
+      "prompt": "How to hire VA for dentist",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:26.205430",
+      "prompt": "How to hire VA for dentist",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:27.849081",
+      "prompt": "How to hire VA for dentist",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:29.136807",
+      "prompt": "How to hire VA for dentist",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:31.062466",
+      "prompt": "How to hire VA for dentist",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": true,
+      "position": 4,
+      "sentiment": "neutral",
+      "snippet": "Schedule a call to discuss your specific hiring needs, including hours, language skills, and desired personality traits.\n\n### Candidate Interviews\n\nWe"
+    },
+    {
+      "timestamp": "2026-10-26T16:20:32.743510",
+      "prompt": "Specialized VA for dental",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:34.160434",
+      "prompt": "Specialized VA for dental",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:35.502640",
+      "prompt": "Specialized VA for dental",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:37.394106",
+      "prompt": "Specialized VA for dental",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:38.734925",
+      "prompt": "Specialized VA for dental",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:40.363798",
+      "prompt": "Specialized VA for dental",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:42.045288",
+      "prompt": "Remote VA for office",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:43.555284",
+      "prompt": "Remote VA for office",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:45.170267",
+      "prompt": "Remote VA for office",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:46.494576",
+      "prompt": "Remote VA for office",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:47.719512",
+      "prompt": "Remote VA for office",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:49.521993",
+      "prompt": "Remote VA for office",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:52.450754",
+      "prompt": "Best virtual assistant",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:54.508963",
+      "prompt": "Best virtual assistant",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:56.312372",
+      "prompt": "Best virtual assistant",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:20:59.140009",
+      "prompt": "Best virtual assistant",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:00.879021",
+      "prompt": "Best virtual assistant",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:02.271477",
+      "prompt": "Best virtual assistant",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:03.876324",
+      "prompt": "Cost of hiring VA",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:05.656814",
+      "prompt": "Cost of hiring VA",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:07.688623",
+      "prompt": "Cost of hiring VA",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:09.301837",
+      "prompt": "Cost of hiring VA",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:10.554396",
+      "prompt": "Cost of hiring VA",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:11.861016",
+      "prompt": "Cost of hiring VA",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:13.224202",
+      "prompt": "Virtual assistant platform",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:14.785227",
+      "prompt": "Virtual assistant platform",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:15.954603",
+      "prompt": "Virtual assistant platform",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:17.217023",
+      "prompt": "Virtual assistant platform",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:18.890114",
+      "prompt": "Virtual assistant platform",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:20.064957",
+      "prompt": "Virtual assistant platform",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:21.770243",
+      "prompt": "Where to hire virtual assistants",
+      "category": "VA",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:22.982498",
+      "prompt": "Where to hire virtual assistants",
+      "category": "VA",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:25.120416",
+      "prompt": "Where to hire virtual assistants",
+      "category": "VA",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:26.734111",
+      "prompt": "Where to hire virtual assistants",
+      "category": "VA",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:27.850213",
+      "prompt": "Where to hire virtual assistants",
+      "category": "VA",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:29.111211",
+      "prompt": "Where to hire virtual assistants",
+      "category": "VA",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:31.572738",
+      "prompt": "Remote team members for small business",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:33.176824",
+      "prompt": "Remote team members for small business",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:34.681291",
+      "prompt": "Remote team members for small business",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:36.126183",
+      "prompt": "Remote team members for small business",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:37.437222",
+      "prompt": "Remote team members for small business",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:38.993640",
+      "prompt": "Remote team members for small business",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:40.233196",
+      "prompt": "How to hire remote team members",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:41.406499",
+      "prompt": "How to hire remote team members",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:42.570775",
+      "prompt": "How to hire remote team members",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:44.100778",
+      "prompt": "How to hire remote team members",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:45.782722",
+      "prompt": "How to hire remote team members",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:47.408728",
+      "prompt": "How to hire remote team members",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:49.129354",
+      "prompt": "Managing remote team members",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:50.884455",
+      "prompt": "Managing remote team members",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:52.046491",
+      "prompt": "Managing remote team members",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:53.681874",
+      "prompt": "Managing remote team members",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:55.193717",
+      "prompt": "Managing remote team members",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:57.751655",
+      "prompt": "Managing remote team members",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:21:58.919653",
+      "prompt": "Remote team building",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:00.415333",
+      "prompt": "Remote team building",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:02.329226",
+      "prompt": "Remote team building",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:03.689391",
+      "prompt": "Remote team building",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:05.777914",
+      "prompt": "Remote team building",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:06.810204",
+      "prompt": "Remote team building",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:08.846057",
+      "prompt": "Remote team members for startups",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:10.519986",
+      "prompt": "Remote team members for startups",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:12.585072",
+      "prompt": "Remote team members for startups",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:14.137508",
+      "prompt": "Remote team members for startups",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:16.172876",
+      "prompt": "Remote team members for startups",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:17.927134",
+      "prompt": "Remote team members for startups",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:19.412036",
+      "prompt": "Cost of remote team members",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:20.482092",
+      "prompt": "Cost of remote team members",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:21.700997",
+      "prompt": "Cost of remote team members",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:22.831746",
+      "prompt": "Cost of remote team members",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:24.953711",
+      "prompt": "Cost of remote team members",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:26.912212",
+      "prompt": "Cost of remote team members",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:28.956921",
+      "prompt": "Remote team onboarding",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:30.260858",
+      "prompt": "Remote team onboarding",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:31.563825",
+      "prompt": "Remote team onboarding",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:33.528029",
+      "prompt": "Remote team onboarding",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:35.330612",
+      "prompt": "Remote team onboarding",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:36.483580",
+      "prompt": "Remote team onboarding",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:38.091445",
+      "prompt": "Building distributed teams",
+      "category": "Remote Team Members",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:40.184270",
+      "prompt": "Building distributed teams",
+      "category": "Remote Team Members",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:41.515838",
+      "prompt": "Building distributed teams",
+      "category": "Remote Team Members",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:43.819617",
+      "prompt": "Building distributed teams",
+      "category": "Remote Team Members",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:45.101175",
+      "prompt": "Building distributed teams",
+      "category": "Remote Team Members",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:46.560818",
+      "prompt": "Building distributed teams",
+      "category": "Remote Team Members",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:48.302712",
+      "prompt": "Remote receptionist services",
+      "category": "Specialized Roles",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:49.647702",
+      "prompt": "Remote receptionist services",
+      "category": "Specialized Roles",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:51.292844",
+      "prompt": "Remote receptionist services",
+      "category": "Specialized Roles",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:53.233424",
+      "prompt": "Remote receptionist services",
+      "category": "Specialized Roles",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:55.107645",
+      "prompt": "Remote receptionist services",
+      "category": "Specialized Roles",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:56.691843",
+      "prompt": "Remote receptionist services",
+      "category": "Specialized Roles",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:58.047060",
+      "prompt": "Virtual bookkeeper for dental",
+      "category": "Specialized Roles",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:22:59.618266",
+      "prompt": "Virtual bookkeeper for dental",
+      "category": "Specialized Roles",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:00.882481",
+      "prompt": "Virtual bookkeeper for dental",
+      "category": "Specialized Roles",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:02.112201",
+      "prompt": "Virtual bookkeeper for dental",
+      "category": "Specialized Roles",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:03.578494",
+      "prompt": "Virtual bookkeeper for dental",
+      "category": "Specialized Roles",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:05.306248",
+      "prompt": "Virtual bookkeeper for dental",
+      "category": "Specialized Roles",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:06.710546",
+      "prompt": "Remote billing specialist",
+      "category": "Specialized Roles",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:08.239834",
+      "prompt": "Remote billing specialist",
+      "category": "Specialized Roles",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:09.852464",
+      "prompt": "Remote billing specialist",
+      "category": "Specialized Roles",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:11.914000",
+      "prompt": "Remote billing specialist",
+      "category": "Specialized Roles",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:13.364119",
+      "prompt": "Remote billing specialist",
+      "category": "Specialized Roles",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:15.182887",
+      "prompt": "Remote billing specialist",
+      "category": "Specialized Roles",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:16.666454",
+      "prompt": "Remote HR assistant",
+      "category": "Specialized Roles",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:18.316482",
+      "prompt": "Remote HR assistant",
+      "category": "Specialized Roles",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:19.916842",
+      "prompt": "Remote HR assistant",
+      "category": "Specialized Roles",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:21.419219",
+      "prompt": "Remote HR assistant",
+      "category": "Specialized Roles",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:23.374664",
+      "prompt": "Remote HR assistant",
+      "category": "Specialized Roles",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:24.654598",
+      "prompt": "Remote HR assistant",
+      "category": "Specialized Roles",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:25.915359",
+      "prompt": "How to find reliable remote workers",
+      "category": "Business Problems",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:27.368345",
+      "prompt": "How to find reliable remote workers",
+      "category": "Business Problems",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:28.466267",
+      "prompt": "How to find reliable remote workers",
+      "category": "Business Problems",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:29.894804",
+      "prompt": "How to find reliable remote workers",
+      "category": "Business Problems",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:31.089099",
+      "prompt": "How to find reliable remote workers",
+      "category": "Business Problems",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:32.320475",
+      "prompt": "How to find reliable remote workers",
+      "category": "Business Problems",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:34.681702",
+      "prompt": "Remote workers turnover solutions",
+      "category": "Business Problems",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:37.318131",
+      "prompt": "Remote workers turnover solutions",
+      "category": "Business Problems",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:39.078458",
+      "prompt": "Remote workers turnover solutions",
+      "category": "Business Problems",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:40.313283",
+      "prompt": "Remote workers turnover solutions",
+      "category": "Business Problems",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:43.286847",
+      "prompt": "Remote workers turnover solutions",
+      "category": "Business Problems",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:44.436782",
+      "prompt": "Remote workers turnover solutions",
+      "category": "Business Problems",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:45.540705",
+      "prompt": "Managing remote workers",
+      "category": "Business Problems",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:46.617668",
+      "prompt": "Managing remote workers",
+      "category": "Business Problems",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:47.890019",
+      "prompt": "Managing remote workers",
+      "category": "Business Problems",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:49.236479",
+      "prompt": "Managing remote workers",
+      "category": "Business Problems",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:50.807852",
+      "prompt": "Managing remote workers",
+      "category": "Business Problems",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:52.116192",
+      "prompt": "Managing remote workers",
+      "category": "Business Problems",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:53.545629",
+      "prompt": "Remote workers training",
+      "category": "Business Problems",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:54.817921",
+      "prompt": "Remote workers training",
+      "category": "Business Problems",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:56.325029",
+      "prompt": "Remote workers training",
+      "category": "Business Problems",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:23:59.007316",
+      "prompt": "Remote workers training",
+      "category": "Business Problems",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:00.163701",
+      "prompt": "Remote workers training",
+      "category": "Business Problems",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:01.402695",
+      "prompt": "Remote workers training",
+      "category": "Business Problems",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:02.971960",
+      "prompt": "Dental insurance verification virtual assistant",
+      "category": "Insurance Verification Specific",
+      "platform": "Google",
+      "mentioned": true,
+      "position": 2,
+      "sentiment": "positive",
+      "snippet": "A dental virtual assistant) is a remote team member who supports dental practices by managing operations tasks. These specialists handle phone answeri"
+    },
+    {
+      "timestamp": "2026-10-26T16:24:04.229305",
+      "prompt": "Dental insurance verification virtual assistant",
+      "category": "Insurance Verification Specific",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:05.856074",
+      "prompt": "Dental insurance verification virtual assistant",
+      "category": "Insurance Verification Specific",
+      "platform": "Perplexity",
+      "mentioned": true,
+      "position": 3,
+      "sentiment": "neutral",
+      "snippet": "A dental virtual assistant) is a remote team member who supports dental practices by managing operations tasks. These specialists handle phone answeri"
+    },
+    {
+      "timestamp": "2026-10-26T16:24:08.096830",
+      "prompt": "Dental insurance verification virtual assistant",
+      "category": "Insurance Verification Specific",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:09.524386",
+      "prompt": "Dental insurance verification virtual assistant",
+      "category": "Insurance Verification Specific",
+      "platform": "Gemini",
+      "mentioned": true,
+      "position": 1,
+      "sentiment": "neutral",
+      "snippet": "A dental virtual assistant) is a remote team member who supports dental practices by managing operations tasks. These specialists handle phone answeri"
+    },
+    {
+      "timestamp": "2026-10-26T16:24:10.804299",
+      "prompt": "Dental insurance verification virtual assistant",
+      "category": "Insurance Verification Specific",
+      "platform": "Copilot",
+      "mentioned": true,
+      "position": 1,
+      "sentiment": "positive",
+      "snippet": "A dental virtual assistant) is a remote team member who supports dental practices by managing operations tasks. These specialists handle phone answeri"
+    },
+    {
+      "timestamp": "2026-10-26T16:24:11.985841",
+      "prompt": "Virtual assistant for dental insurance verification and billing",
+      "category": "Insurance Verification Specific",
+      "platform": "Google",
+      "mentioned": true,
+      "position": 3,
+      "sentiment": "neutral",
+      "snippet": "Daiane is from Brazil and has been with Reach for almost four years. She specializes in insurance verification for dental practices, working one week "
+    },
+    {
+      "timestamp": "2026-10-26T16:24:13.157772",
+      "prompt": "Virtual assistant for dental insurance verification and billing",
+      "category": "Insurance Verification Specific",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:15.874428",
+      "prompt": "Virtual assistant for dental insurance verification and billing",
+      "category": "Insurance Verification Specific",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:17.442627",
+      "prompt": "Virtual assistant for dental insurance verification and billing",
+      "category": "Insurance Verification Specific",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:18.912539",
+      "prompt": "Virtual assistant for dental insurance verification and billing",
+      "category": "Insurance Verification Specific",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:20.102157",
+      "prompt": "Virtual assistant for dental insurance verification and billing",
+      "category": "Insurance Verification Specific",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:21.863455",
+      "prompt": "Outsourced dental insurance verification",
+      "category": "Insurance Verification Specific",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:23.520835",
+      "prompt": "Outsourced dental insurance verification",
+      "category": "Insurance Verification Specific",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:25.008221",
+      "prompt": "Outsourced dental insurance verification",
+      "category": "Insurance Verification Specific",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:26.908254",
+      "prompt": "Outsourced dental insurance verification",
+      "category": "Insurance Verification Specific",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:28.293845",
+      "prompt": "Outsourced dental insurance verification",
+      "category": "Insurance Verification Specific",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:29.726434",
+      "prompt": "Outsourced dental insurance verification",
+      "category": "Insurance Verification Specific",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:31.422647",
+      "prompt": "Dental practice outsourcing insurance verification and billing",
+      "category": "Insurance Verification Specific",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:32.884385",
+      "prompt": "Dental practice outsourcing insurance verification and billing",
+      "category": "Insurance Verification Specific",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:34.964261",
+      "prompt": "Dental practice outsourcing insurance verification and billing",
+      "category": "Insurance Verification Specific",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:37.952129",
+      "prompt": "Dental practice outsourcing insurance verification and billing",
+      "category": "Insurance Verification Specific",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:41.347835",
+      "prompt": "Dental practice outsourcing insurance verification and billing",
+      "category": "Insurance Verification Specific",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:43.660618",
+      "prompt": "Dental practice outsourcing insurance verification and billing",
+      "category": "Insurance Verification Specific",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:44.927621",
+      "prompt": "Compare top virtual assistant companies for dental practices",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Google",
+      "mentioned": true,
+      "position": 5,
+      "sentiment": "neutral",
+      "snippet": "Daiane is from Brazil and has been with Reach for almost four years. She specializes in insurance verification for dental practices, working one week "
+    },
+    {
+      "timestamp": "2026-10-26T16:24:46.849699",
+      "prompt": "Compare top virtual assistant companies for dental practices",
+      "category": "Competitive & Purchase Intent",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:48.579968",
+      "prompt": "Compare top virtual assistant companies for dental practices",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:50.951740",
+      "prompt": "Compare top virtual assistant companies for dental practices",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:52.294802",
+      "prompt": "Compare top virtual assistant companies for dental practices",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:54.258368",
+      "prompt": "Compare top virtual assistant companies for dental practices",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:56.007440",
+      "prompt": "Best dental VA company for insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:57.863607",
+      "prompt": "Best dental VA company for insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:24:59.656063",
+      "prompt": "Best dental VA company for insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:01.394267",
+      "prompt": "Best dental VA company for insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Claude",
+      "mentioned": true,
+      "position": 4,
+      "sentiment": "neutral",
+      "snippet": "Hire now\n\nDaiani Mataveli\n\nDaiani Mataveli\n\nInsurance Verification Specialist\n\n### Daiani Mataveli\n\nInsurance Verification Specialist [...] Daiane is "
+    },
+    {
+      "timestamp": "2026-10-26T16:25:02.902786",
+      "prompt": "Best dental VA company for insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:04.468756",
+      "prompt": "Best dental VA company for insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:05.694815",
+      "prompt": "How to hire a virtual assistant for my dental practice",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Google",
+      "mentioned": true,
+      "position": 2,
+      "sentiment": "neutral",
+      "snippet": "Schedule a call to discuss your specific hiring needs, including hours, language skills, and desired personality traits.\n\n### Candidate Interviews\n\nWe"
+    },
+    {
+      "timestamp": "2026-10-26T16:25:06.955614",
+      "prompt": "How to hire a virtual assistant for my dental practice",
+      "category": "Competitive & Purchase Intent",
+      "platform": "ChatGPT",
+      "mentioned": true,
+      "position": 2,
+      "sentiment": "positive",
+      "snippet": "Close Search\n\nReach\n\n Hire now\n\nReach\n\n# Human Cost-Effective AI Amplified Reliable Engaged virtual assistants for dental practices\n\nBuild a sustainab"
+    },
+    {
+      "timestamp": "2026-10-26T16:25:08.468297",
+      "prompt": "How to hire a virtual assistant for my dental practice",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:10.355825",
+      "prompt": "How to hire a virtual assistant for my dental practice",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Claude",
+      "mentioned": true,
+      "position": 2,
+      "sentiment": "neutral",
+      "snippet": "Our recruitment process is tailored to your specific needs. We start by understanding your ideal candidate\u2019s skills, schedule, and personality. Our te"
+    },
+    {
+      "timestamp": "2026-10-26T16:25:11.679491",
+      "prompt": "How to hire a virtual assistant for my dental practice",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Gemini",
+      "mentioned": true,
+      "position": 4,
+      "sentiment": "positive",
+      "snippet": "Our recruitment process is tailored to your specific needs. We start by understanding your ideal candidate\u2019s skills, schedule, and personality. Our te"
+    },
+    {
+      "timestamp": "2026-10-26T16:25:13.119912",
+      "prompt": "How to hire a virtual assistant for my dental practice",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:17.241234",
+      "prompt": "Recommend a specialized virtual assistant service for a dental office that also does insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Google",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:20.764319",
+      "prompt": "Recommend a specialized virtual assistant service for a dental office that also does insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:22.895000",
+      "prompt": "Recommend a specialized virtual assistant service for a dental office that also does insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:25.353330",
+      "prompt": "Recommend a specialized virtual assistant service for a dental office that also does insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:28.341788",
+      "prompt": "Recommend a specialized virtual assistant service for a dental office that also does insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:30.395385",
+      "prompt": "Recommend a specialized virtual assistant service for a dental office that also does insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:31.544582",
+      "prompt": "Dental virtual assistant with insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Google",
+      "mentioned": true,
+      "position": 3,
+      "sentiment": "neutral",
+      "snippet": "Daiane is from Brazil and has been with Reach for almost four years. She specializes in insurance verification for dental practices, working one week "
+    },
+    {
+      "timestamp": "2026-10-26T16:25:32.967071",
+      "prompt": "Dental virtual assistant with insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "ChatGPT",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:34.496838",
+      "prompt": "Dental virtual assistant with insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Perplexity",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:35.896101",
+      "prompt": "Dental virtual assistant with insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Claude",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:37.237237",
+      "prompt": "Dental virtual assistant with insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Gemini",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    },
+    {
+      "timestamp": "2026-10-26T16:25:40.666267",
+      "prompt": "Dental virtual assistant with insurance verification",
+      "category": "Competitive & Purchase Intent",
+      "platform": "Copilot",
+      "mentioned": false,
+      "position": null,
+      "sentiment": "none",
+      "snippet": ""
+    }
+  ]
+}

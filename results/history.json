@@ -698,5 +698,81 @@
         "tests": 33
       }
     }
+  },
+  {
+    "timestamp": "2026-10-26T16:25:40.666469",
+    "day": "MONDAY",
+    "total_tests": 198,
+    "summary": {
+      "visibility_score": 7,
+      "avg_position": 2.8,
+      "positive_sentiment": 31,
+      "total_mentions": 13,
+      "total_tests": 198
+    },
+    "by_category": {
+      "VA": {
+        "visibility": 2,
+        "mentions": 1,
+        "tests": 48
+      },
+      "Remote Team Members": {
+        "visibility": 0,
+        "mentions": 0,
+        "tests": 48
+      },
+      "Specialized Roles": {
+        "visibility": 0,
+        "mentions": 0,
+        "tests": 24
+      },
+      "Business Problems": {
+        "visibility": 0,
+        "mentions": 0,
+        "tests": 24
+      },
+      "Insurance Verification Specific": {
+        "visibility": 21,
+        "mentions": 5,
+        "tests": 24
+      },
+      "Competitive & Purchase Intent": {
+        "visibility": 23,
+        "mentions": 7,
+        "tests": 30
+      }
+    },
+    "by_platform": {
+      "Google": {
+        "visibility": 15,
+        "mentions": 5,
+        "tests": 33
+      },
+      "ChatGPT": {
+        "visibility": 3,
+        "mentions": 1,
+        "tests": 33
+      },
+      "Perplexity": {
+        "visibility": 3,
+        "mentions": 1,
+        "tests": 33
+      },
+      "Claude": {
+        "visibility": 6,
+        "mentions": 2,
+        "tests": 33
+      },
+      "Gemini": {
+        "visibility": 6,
+        "mentions": 2,
+        "tests": 33
+      },
+      "Copilot": {
+        "visibility": 6,
+        "mentions": 2,
+        "tests": 33
+      }
+    }
   }
 ]
